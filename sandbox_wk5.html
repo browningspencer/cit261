@@ -2,6 +2,217 @@
 	<head>
 		<title>Sandbox Week 5 - Loops, Conditional Statements, Functions, Variables, Parameters, Arrays, Associative Arrays</title>
 		<script>
+			/* Loops */
+
+			//While Loops
+
+			//Happy Path
+			var desserts = ["icecream", "cake", "brownies", "cookies", "cupcakes"];
+			var i = 0;
+			while (i < desserts.length) {
+				console.log(desserts[i]);
+				i++;
+			}
+			//Result - Prints out all the contents of 'desserts' array
+
+			//Nasty Path
+			//Common mistake is to use a while loop for something that should use a for loop instead
+			var desserts = ["icecream", "cake", "brownies", "cookies", "cupcakes"];
+			var i = 0;
+			while (i < desserts.length) {
+				console.log(desserts[i]);
+				i++;
+			}
+			//Result - Prints out correctly it just isn't good coding style
+
+			//Nasty Path
+			//i gets incremented before it is used
+			var desserts = ["icecream", "cake", "brownies", "cookies", "cupcakes"];
+			var i = 0;
+			try {
+				while (i < desserts.length) {
+					i++
+					console.log(desserts[i]);
+				}
+			}
+			catch(err) {
+				console.log(err.message);
+			}
+			//Result - First element will be passed over
+
+			//For Loops
+
+			//Happy Path
+			var desserts = ["icecream", "cake", "brownies", "cookies", "cupcakes"];
+			for (var i = 0; i < desserts.length; i++) {
+				console.log(desserts[i]);
+			}
+			//Result - Prints out all the contents of 'desserts' array
+
+			//Nasty Path
+			//Common mistake for beginners to think the first element of an array is 1 instead of 0.
+			try {
+				for (var i = 1; i < desserts.length; i++) {
+					console.log(cars[i]);
+				}
+			}
+			catch(err) {
+				console.log(err.message);
+			}
+			//Result - First element will be passed over
+
+
+			/* Conditional Statements */
+			//Happy Path
+			var i = 2;
+			if (i == 2) {
+				console.log("Success");
+			}
+			else {
+				console.log("Failure");
+			}
+			//Result - Will print 'Success' because the if statement is checking to see if i is equal to 2 or not.
+
+			//Nasty Path
+			//Conditional Statement requires two equal signs, not one
+			var i = 2;
+			if (i = 2) {
+				console.log("Success");
+			}
+			else {
+				console.log("Failure");
+			}
+			//Result - Will assign 2 to i instead of checking to see if it is true. Will cause it to evaluate to true.
+
+			//Nasty Path
+			//Common mistake for beginners is to think an else statement is like a elseif statement and try to add a condition
+			var i = 2;
+			if (i == 2) {
+				console.log("Success");
+			}
+			else (i > 2) {
+				console.log("Failure");
+			}
+			//Result - the code will not compile and call out a syntax error.
+
+
+			/* Functions */
+			//Happy Path
+			function testFunction(par1, par2) {
+				return par1 + par2;
+			}
+			testFunction(2, 3);
+			//Result - testFunction will return the sum  of par1 and par2.
+
+			//Nasty Path
+			//Parameters passed into a function must be matching types
+			function testFunction(par1, par2) {
+				return par1 + par2;
+			}
+			try {
+				testFunction(2, "number");
+			}
+			catch(err) {
+				console.log(err.message);
+			}
+			//Result - testFunction will Failure because you can't add a number and a string together
+
+			//Nasty Path
+			//The function call must match the function description.
+			function testFunction() {
+				console.log("Hello World!");
+			}
+			try {
+				testFunction(1, 2);
+			}
+			catch(err) {
+				console.log(err.message);
+			}
+			//Result - Code doesn't execute because function call doesn't match function.
+
+
+			/* Variables */
+			//Happy Path
+			var x = 1;
+			var y = 2;
+			var z = x + y;
+			//Result - z will equal 3
+
+			//Nasty Path
+			//Adding a string and a integer together will create an error
+			var x = "2";
+			var y = 2;
+			var z = x + y;
+			//Result - Will be an error. Strings can be added together and integers can be added together, but strings and integers don't add.
+
+			//Nasty Path
+			//Common mistake for beginners is trying to implement a bool variable as a string
+			var x = "true";
+			if (x) {
+				console.log("Success");
+			}
+			else {
+				console.log("Failure");
+			}
+			//Result - Even though intent was to have console read "Success", it will read "Failure" because x is a string, not a bool.
+
+
+			/* Parameters */
+			//Happy Path
+			//The number of parameters and the type of parameter matches in the function call and function definition.
+			function testFunction(par1, par2) {
+				return par1 + par2;
+			}
+			testFunction(2, 3);
+			//Result - Code runs correctly
+
+			//Nasty Path
+			//The number of parameters in the function call is incorrect
+			function testFunction(par1, par2) {
+				return par1 + par2;
+			}
+			try {
+				testFunction(1, 2, 3);
+			}
+			catch(err) {
+				console.log(err.message);
+			}
+			//Result - Code will fail because the number of parameters in the function call was one too many.
+
+
+			/* Arrays */
+			//Happy Path
+			//Arrays always start with index 0
+			var prime_numbers = ["1, 2, 3, 5, 7"];
+			var x = prime_numbers[0];
+			//Result - x will be the value of index 0 which is 1
+
+			//Nasty Path
+			//Common mistake for begginers is to think that an array starts at index 1
+			var prime_numbers = ["1, 2, 3, 5, 7"];
+			var x = prime_numbers[1];
+			//Result - Output will be 2 even though the user will have expected the output to be 1
+
+
+			/* Associative Arrays */
+			//Happy Path
+			var address = [];
+			address["house_number"] = "339";
+			address["street"] = "Wymount Terrace";
+			address["city"] = "Provo"
+			console.log(address["street"]);
+			//Result - "Wymount Terrace"
+
+			//Nasty Path
+			//Associative arrays don't have a number index but a name
+			console.log(address[2]);
+			//Result - undefined
+
+			//Nasty Path
+			//Associative arrays don't keep a size in the way that a regular array does
+			console.log(address.length);
+			//Result - 0 but the user would have expected 3.
+
 		</script>
 		<style>
 		</style>
