@@ -1,2 +1,10 @@
 This is an exercise to practice using github again.
 
+For the Nasty paths, use try and catches so you can run the bad code without killing it
+
+"website"/sandbox_wk1.html
+
+// sandbox_wk1.html would be the file that you are submitting with all of your code in it.
+
+Pretty much copy the submit request on the google doc and just change out some stuff 
+
