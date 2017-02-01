@@ -1,2 +1,1 @@
-# cit261
-Repository for BYUI CIT261 personal projects
+Github Repository for my CIT 261 projects and code.
