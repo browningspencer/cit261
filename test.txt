@@ -1,1 +1,2 @@
-This is an exercise to practice using github again
+This is an exercise to practice using github again.
+
