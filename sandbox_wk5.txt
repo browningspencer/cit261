@@ -1,24 +1,22 @@
 Brother Klein,
 
-Previously I submitted sandbox code for each of the following topics to you. I have made the changes you suggested and am now requesting that my fluency be recorded and moved from Strongly Disagree to Disagree.
+This is a first time submission. I am requesting that my fluency be recorded and moved from Strongly Disagree to Disagree in the following topic:
 
-	-Local Storage API, Storing and Retrieving Simple Data, Arrays, Associative Arrays, and Objects
-	-Using XMLHTTPRequest to Consume a JSON Web Service
-	-HTML5 Tags - Video, Audio, Canvas, etc.
+	-Loops, Conditional Statements, Functions, Variables, Parameters, Arrays, Associative Arrays
 
 I also am providing you evidence of my professionalism as described in the 'Being Successful by being Assessed' portion of the course description and in the course rubric.
 
-	1. Interacting Professionally with the Instructor: I have asked questions of you regarding these three topics, and have kept you up-to-date on the 	schedule changes our team made since I last claimed fluency. One question I asked was, "I've been working on learning to use XMLHTTPRequest. I think I understand how it works, but how do I access the data I get back when using an API like snapChat's?"
+	1. Interacting Professionally with the Instructor - I contacted you to get added to one of the teams a little late in the semester because I got started on the class late. I am striving to follow all the correct proceedures in submitting code and requesting assessment from you.
 
-	2. Interacting Helpfully and Professionally with Other Teams: As you can see from this link to a Google+ group discussion, I shared with another team what I previously learned about using Video tags to record videos.
+	2. Interacting Helpfully and Professionally with Other Teams - I haven't had any interaction with any teams other than my own, but I hope speak with other teams on the discussion boards.
 
-	3. Supporting the Team by Teaching, etc. - Here is a link to a Google+ hangout where I am teaching my team about JavaScript loops and arrays. You can hear me teaching at the 3:20 time stamp in the video.
+	3. Supporting the Team by Teaching, etc. - I
 
-	-Self-Reflection/Meta-Cognition: I had a meta-cognative moment this week. I was in sacrament meeting listening to a ward member speak about the importance of scripture reading. This is something I have had trouble doing consistantly. I started wondering why. Then I started pondering, "Why do I think scripture reading isn't important enough to do every day?" I realized I was thinking of scripture reading as being an extra thing I should do when I already have a busy schedule with my family, my job, and my church calling. I realized and have now started to think of scripture reading as the foundation of anything I want or need to accomplish. It isn't optional to me anymore. My thinking has changed.
+	-Self-Reflection/Meta-Cognition: 
 
-	-Team's Agile Methodology: Our team is using the scrum method. Since I last submitted an assessment request I've been participating in our scrum daily standup meetings, working on my assigned scrum sprint, and attending and participating in our other team meetings.
+	-Team's Agile Methodology: 
 	
-	-Professional Scheduling Group: At this point I've met all of the scheduled commitments I've made to the team for delivery of teaching and code. The schedule has had to be modified a little because it took me a little more time to understand Local Storage than I thought it would. You can see the schedule I'm working against and the dates I've delivered what I was responsible for to my team at this link.
+	-Professional Scheduling Group: 
 
 Thank you. 
 Signed, 
